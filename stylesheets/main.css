@@ -1,6 +1,6 @@
 h1 {
   font-weight: bold;
-  color: #fff000;
+  color: #505050;
   font-size: 32px;
 }
 
@@ -9,6 +9,6 @@ html {
 }
 
 body {
-    color: blue;
-    padding: 0 50px 0 50px;
+    color: #686868;
+    padding: 50px;
 }
