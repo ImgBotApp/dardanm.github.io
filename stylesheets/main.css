@@ -8,13 +8,18 @@ html {
   font-family: 'Roboto', sans-serif; 
 }
 
-body {
+.intro {
     color: #686868;
     padding: 20px 50px 20px 50px;
 }
 
+.projects{
+	background-color: red;
+	height: 200px;
+}
+
 @media screen and (max-width: 700px) {
-    body {
+    .intro {
         padding: 0 10px 0 10px;
     }
 }
