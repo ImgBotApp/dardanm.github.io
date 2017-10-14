@@ -23,7 +23,7 @@ h1 {
 #projects{
 	background-color: brown;
 	height: 200px;
-	padding: 20px;
+	padding: 20px 50px 20px 50px;
 	color: white;	
 }
 
@@ -33,7 +33,6 @@ p.intro_p{
 
 p.projects_p{
 	font-weight: bold;
-	padding-left: 20px;
 }
 
 @media screen and (max-width: 700px) {
@@ -44,10 +43,10 @@ p.projects_p{
         padding: 0 10px 0 10px;
     }
 	#projects{
-		padding: 10px 10px 0 10px;
+		padding: 10px;
     }
 	p.intro_p{
-		margin-top: 0px;
+		padding: 0px
 	}
 	p.projects_p {
 		padding: 0;
