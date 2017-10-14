@@ -1,7 +1,7 @@
-h1 {
-  font-weight: bold;
-  color: #505050;
-  font-size: 32px;
+html {
+	font-family: 'Roboto', sans-serif; 
+	margin: 0;
+	padding: 0;
 }
 
 body {
@@ -9,25 +9,48 @@ body {
 	padding: 0;
 }
 
-html {
-  font-family: 'Roboto', sans-serif; 
-margin: 0;
-	padding: 0;
+h1 {
+    font-weight: bold;
+    color: #505050;
+    font-size: 32px;
 }
 
 #intro {
     color: #686868;
-    padding: 20px 50px 20px 50px;
+    padding: 0px 50px 20px 50px;
 }
 
 #projects{
-	background-color: orange;
+	background-color: brown;
 	height: 200px;
-	margin: 0;
+	padding: 20px;
+	color: white;	
+}
+
+p.intro_p{
+	max-width: 300px;
+}
+
+p.projects_p{
+	font-weight: bold;
+	padding-left: 20px;
 }
 
 @media screen and (max-width: 700px) {
-    #intro {
+	h1{
+		margin: 10px 0 10px 0;
+	}
+    #intro{
         padding: 0 10px 0 10px;
     }
+	#projects{
+		padding: 10px 10px 0 10px;
+    }
+	p.intro_p{
+		margin-top: 0px;
+	}
+	p.projects_p {
+		padding: 0;
+	}
+	
 }
