@@ -11,9 +11,9 @@ body {
 
 h1 {
     font-weight: bold;
-    color: #505050;
+    color: #5E5E5E;
     font-size: 32px;
-	margin: 10px 0 10px 0;
+	margin: 20px 0 20px 0;
 }
 
 #intro {
@@ -29,7 +29,7 @@ h1 {
 }
 
 p.intro_p{
-	max-width: 400px;
+	max-width: 350px;
 	text-align: left;
 }
 
@@ -52,15 +52,8 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-	text-decoration: none;
+	text-decoration: underline;
     color: #3491C1;
-}
-a.resume_a:hover{
-	color:black;
-}
-a.resume_a:active {
-	text-decoration: none;
-    color: black;
 }
 
 /* selected link */
@@ -69,16 +62,58 @@ a:active {
     color: #3491C1;
 }
 
+/* Extra Custom Hyperlinks*/
+/* RESUME LINK */
+a.resume_a:link{ font-weight: bold;}
+a.resume_a:visited{
+	color: #F95255;
+	font-weight: bold;
+}
+a.resume_a:hover{
+	color: #C23032;
+	text-decoration: underline;
+}
+a.resume_a:active {
+	text-decoration: none;
+    color: black;
+}
+/* GITHUB LINK */
+a.github_a:link{ font-weight: bold;}
+a.github_a:visited{
+	color: #A851FF;
+	font-weight: bold;
+}
+a.github_a:hover{
+	color: #9930E0;
+	text-decoration: underline;
+}
+a.github_a:active {
+	text-decoration: none;
+    color: black;
+}
+/* CONTACT LINK */
+a.contact_a:visited{
+	color: #FE9927;
+}
+a.contact_a:hover{
+	color: #D66C1B;
+	text-decoration: underline;
+}
+a.contact_a:active {
+	text-decoration: none;
+    color: black;
+}
+
 
 @media screen and (max-width: 700px) {
 	h1{
-		margin: 10px 0 10px 0;
+		margin: 10px 0 0px 0;
 	}
     #intro{
         padding: 0 20px 0 20px;
     }
 	#projects{
-		margin-top: 10px;
+		margin-top: 0px;
     }
 	p.intro_p{
 		padding: 0px
