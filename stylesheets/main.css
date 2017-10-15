@@ -75,15 +75,16 @@ a:active {
 		margin: 10px 0 10px 0;
 	}
     #intro{
-        padding: 0 10px 0 10px;
+        padding: 0 20px 0 20px;
     }
 	#projects{
+		margin-top: 10px;
     }
 	p.intro_p{
 		padding: 0px
 	}
 	p.projects_p {
-		padding: 5px 10px 5px 10px;
+		padding: 5px 20px 5px 20px;
 	}
 	
 }
