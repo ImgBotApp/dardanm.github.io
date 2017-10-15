@@ -64,7 +64,10 @@ a:active {
 
 /* Extra Custom Hyperlinks*/
 /* RESUME LINK */
-a.resume_a:link{ font-weight: bold;}
+a.resume_a:link{ 
+	font-weight: bold;
+	color: #F95255;
+}
 a.resume_a:visited{
 	color: #F95255;
 	font-weight: bold;
