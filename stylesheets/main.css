@@ -13,28 +13,62 @@ h1 {
     font-weight: bold;
     color: #505050;
     font-size: 32px;
+	margin: 10px 0 10px 0;
 }
 
 #intro {
     color: #686868;
-    padding: 0px 50px 20px 50px;
+    padding: 0px 50px 0px 50px;
 }
 
 #projects{
-	background-color: brown;
-	height: 200px;
-	padding: 20px 50px 20px 50px;
+	background-color: #59C5FF;
+	height: 30px;
 	color: white;	
+	margin-top: 30px;
 }
 
 p.intro_p{
-	max-width: 300px;
+	max-width: 400px;
 	text-align: left;
 }
 
 p.projects_p{
 	font-weight: bold;
+	padding: 5px 50px 5px 50px;
 }
+
+/* unvisited link */
+a:link {
+	text-decoration: none;
+    color: #48B4EB;
+}
+
+/* visited link */
+a:visited {
+	text-decoration: none;
+    color: #48B4EB;
+}
+
+/* mouse over link */
+a:hover {
+	text-decoration: none;
+    color: #3491C1;
+}
+a.resume_a:hover{
+	color:black;
+}
+a.resume_a:active {
+	text-decoration: none;
+    color: black;
+}
+
+/* selected link */
+a:active {
+	text-decoration: none;
+    color: #3491C1;
+}
+
 
 @media screen and (max-width: 700px) {
 	h1{
@@ -44,13 +78,12 @@ p.projects_p{
         padding: 0 10px 0 10px;
     }
 	#projects{
-		padding: 10px;
     }
 	p.intro_p{
 		padding: 0px
 	}
 	p.projects_p {
-		padding: 0;
+		padding: 5px 10px 5px 10px;
 	}
 	
 }
