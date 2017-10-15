@@ -29,6 +29,7 @@ h1 {
 
 p.intro_p{
 	max-width: 300px;
+	text-align: left;
 }
 
 p.projects_p{
