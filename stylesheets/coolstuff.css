@@ -1,0 +1,128 @@
+html {
+	font-family: 'Roboto', sans-serif; 
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+    font-weight: bold;
+    color: #5E5E5E;
+    font-size: 32px;
+	margin: 20px 0 20px 0;
+}
+
+#intro {
+    color: #686868;
+    padding: 0px 50px 0px 50px;
+}
+
+#projects{
+	background-color: #59C5FF;
+	height: 30px;
+	color: white;	
+	margin-top: 30px;
+}
+
+p.intro_p{
+	max-width: 600px;
+	text-align: left;
+}
+
+p.projects_p{
+	font-weight: bold;
+	padding: 5px 50px 5px 50px;
+}
+
+/* unvisited link */
+a:link {
+	text-decoration: none;
+    color: #48B4EB;
+}
+
+/* visited link */
+a:visited {
+	text-decoration: none;
+    color: #48B4EB;
+}
+
+/* mouse over link */
+a:hover {
+	text-decoration: underline;
+    color: #3491C1;
+}
+
+/* selected link */
+a:active {
+	text-decoration: none;
+    color: #3491C1;
+}
+
+/* Extra Custom Hyperlinks*/
+/* RESUME LINK */
+a.resume_a:link{ 
+	font-weight: bold;
+	color: #F95255;
+}
+a.resume_a:visited{
+	color: #F95255;
+	font-weight: bold;
+}
+a.resume_a:hover{
+	color: #C23032;
+	text-decoration: underline;
+}
+a.resume_a:active {
+	text-decoration: none;
+    color: black;
+}
+/* GITHUB LINK */
+a.github_a:link{ font-weight: bold;}
+a.github_a:visited{
+	color: #A851FF;
+	font-weight: bold;
+}
+a.github_a:hover{
+	color: #9930E0;
+	text-decoration: underline;
+}
+a.github_a:active {
+	text-decoration: none;
+    color: black;
+}
+/* CONTACT LINK */
+a.contact_a:visited{
+	color: #FE9927;
+}
+a.contact_a:hover{
+	color: #D66C1B;
+	text-decoration: underline;
+}
+a.contact_a:active {
+	text-decoration: none;
+    color: black;
+}
+
+
+@media screen and (max-width: 700px) {
+	h1{
+		margin: 10px 0 0px 0;
+	}
+    #intro{
+        padding: 0 20px 0 20px;
+    }
+	#projects{
+		margin-top: 0px;
+    }
+	p.intro_p{
+		padding: 0px
+	}
+	p.projects_p {
+		padding: 5px 20px 5px 20px;
+	}
+	
+}
