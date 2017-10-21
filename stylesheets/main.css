@@ -9,6 +9,14 @@ body {
 	padding: 0;
 }
 
+img{
+	max-width: 300px;
+	width: 100%;
+    height: auto;
+	display: block;
+    margin: auto;
+}
+
 h1 {
     font-weight: bold;
     color: #5E5E5E;
@@ -22,7 +30,7 @@ h1 {
 }
 
 #projects{
-	background-color: #59C5FF;
+	background-color: #F5792B;
 	height: 30px;
 	color: white;	
 	margin-top: 30px;
