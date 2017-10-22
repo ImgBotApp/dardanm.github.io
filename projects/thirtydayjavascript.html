@@ -34,19 +34,38 @@
   	 </div>
   	 
   	 <audio data-key="65" src="../files/sound/clap.wav"></audio>
-  	 <audio data-key="65" src="../files/sound/hihat.wav"></audio>
-  	 <audio data-key="65" src="../files/sound/kick.wav"></audio>
+  	 <audio data-key="83" src="../files/sound/hihat.wav"></audio>
+  	 <audio data-key="68" src="../files/sound/kick.wav"></audio>
   	
   	<script>
 		// listen for keydown event, and then run function e
 		window.addEventListener('keydown', function(e){
 			// querySelector only looking for one vs querySelectorAll
 			const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+			const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
 			
 			if(!audio) return;
+			
+			audio.currentTime = 0; // rewind to start
 			audio.play();
+			
+			key.classList.add('playing');
+			
+			
 	    });
+		
+		function removeTransition(e){
+			if(e.propertyName !== 'transform') return;
+			e.target.classList.remove('playing');
+		}
+		
+		const keys = document.querySelectorAll('.key');
+  		keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+		
 	</script>
+  
+  	  	 <h2>2. CSS + JS Clock</h2>
+
 	  
 </body>
 </html>
