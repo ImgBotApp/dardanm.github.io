@@ -164,7 +164,7 @@ a.contact_a:active {
 		padding: 0px
 	}
 	p.project_desc{
-		
+		margin: 0;
 	}
 	img.app_preview{
 		width: 100%;
