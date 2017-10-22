@@ -26,11 +26,19 @@ img.web_template{
 	padding: 0;
 }
 
+img.preview{
+	margin-top: 20px;
+}
+
 h1 {
     font-weight: bold;
     color: #5E5E5E;
     font-size: 32px;
 	margin: 20px 0 20px 0;
+}
+
+h2 {
+
 }
 
 header {
@@ -53,8 +61,6 @@ p.project_desc{
 	text-align: center;
 	padding: 20px 0px 20px;
 	margin: 20px;
-	font-style: italic;
-	font-weight: bold;
 	display: inline-block;
 }
 
@@ -166,7 +172,4 @@ a.contact_a:active {
 	p.project_desc{
 		margin: 0;
 	}
-	img.app_preview{
-		width: 100%;
-		max-width: 375px;
-	}
+}
