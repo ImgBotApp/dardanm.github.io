@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Dardan's Porfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/main.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/thirtyjavascript.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+  
+<body>
+	
+	 <header>
+	 	<h1>30 Javascript Challenge</h1>
+	 </header>  
+  	
+  	 <h2>1. Javascript Drum Kit</h2>
+  	 <div class="keys">
+  	 	
+  	 	<!-- keycode.info for key codes -->
+  	 	<div data-key="65" class="key">
+  	 		<kbd>A</kbd><br>
+  	 		<span class="sound">clap</span>
+  	 	</div>
+  	 	<div data-key="83" class="key">
+  	 		<kbd>S</kbd><br>
+  	 		<span class="sound">hihat</span>
+  	 	</div>
+  	 	<div data-key="68" class="key">
+  	 		<kbd>D</kbd><br>
+  	 		<span class="sound">kick</span>
+  	 	</div>
+  	 	
+  	 </div>
+  	 
+  	 <audio data-key="65" src="sounds/clap.wav"></audio>
+  	 <audio data-key="65" src="sounds/hihat.wav"></audio>
+  	 <audio data-key="65" src="sounds/kick.wav"></audio>
+  	
+  	<script>
+		// listen for keydown event, and then run function e
+		window.addEventListener('keydown', function(e){
+			// querySelector only looking for one vs querySelectorAll
+			const audio = document.querySelector('audio[data-key="${e.keyCode}"]')	
+			
+			if(!audio) return;
+			audio.play();
+	    });
+	</script>
+  	
+  	
+     <script>    
+		$(function() {
+        $('.lazy').Lazy();
+    	});
+	</script>
+
+	 
+	    <script type="text/javascript" src="scripts/jquery.lazy-master/jquery.lazy.min.js"></script>
+	  
+</body>
+</html>

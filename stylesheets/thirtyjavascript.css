@@ -1,0 +1,36 @@
+header{
+	text-align: center;
+	display: block;
+}
+h2 {
+	text-align: center;
+	margin: 50px 0 0 0;
+}
+
+.keys {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  margin: 1rem;
+  font-size: 1rem;
+  padding: .5rem;
+  transition: all .07s ease;
+  width: 7rem;
+  text-align: center;
+  color: white;
+  background-color: #F26668;
+
+}
+
+kbd{
+	font-size: 3rem;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
