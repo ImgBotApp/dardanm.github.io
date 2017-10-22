@@ -12,12 +12,18 @@ body {
 }
 
 img{
-	max-width: 300px;
+	max-width: 320px;
 	width: 100%;
     height: auto;
 	display:inline-block;
     margin: auto;
 	padding: 0 10px 0 10px;
+}
+
+img.web_template{
+	width: 100%;
+	max-width: 2000px;
+	padding: 0;
 }
 
 h1 {
@@ -44,8 +50,11 @@ header {
 
 p.project_desc{
 	text-align: center;
-	padding: 5px 0 20px;
+	padding: 20px 0px 20px;
+	margin: 20px;
 	font-style: italic;
+	font-weight: bold;
+	display: inline-block;
 }
 
 p.intro_p{
@@ -57,16 +66,21 @@ p.intro_p{
 
 .strip1,.strip2{
 	font-weight: bold;
-	padding: 5px 0px 5px 0px;
+	padding: 10px 0px 10px 0px;
 	text-align: center;
 	color: white;
+	font-size: 16pt;
+	border-bottom-style: solid;
+	border-width: 5px;
 }
 .strip1{
-	background-color: #F5792B;
+	background-color: #58C3FA;
+	border-color: #4DA8D6;
 }
 
 .strip2{
-	background-color: #5E5F5F
+	background-color: #FA5757;
+	border-color: #D94B4B;
 }
 
 
@@ -127,6 +141,10 @@ a.github_a:active {
     color: black;
 }
 /* CONTACT LINK */
+a.contact_a:link {
+	text-decoration: none;
+    color: #FE9927;
+}
 a.contact_a:visited{
 	color: #FE9927;
 }
@@ -135,6 +153,7 @@ a.contact_a:hover{
 	text-decoration: underline;
 }
 a.contact_a:active {
+	color: #FE9927;
 	text-decoration: none;
     color: black;
 }
@@ -150,8 +169,10 @@ a.contact_a:active {
 	p.intro_p{
 		padding: 0px
 	}
-	p.projects_p {
-		padding: 5px 20px 5px 20px;
+	p.project_desc{
+		
 	}
-	
-}
+	img.app_preview{
+		width: 100%;
+		max-width: 400px;
+	}
