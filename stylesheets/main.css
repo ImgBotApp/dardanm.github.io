@@ -34,6 +34,7 @@ h1 {
 }
 
 header {
+	text-align: center;
     padding: 30px 50px 0px 50px;
 }
 
@@ -58,8 +59,7 @@ p.project_desc{
 }
 
 p.intro_p{
-	max-width: 350px;
-	text-align: left;
+
 }
 
 
@@ -138,6 +138,7 @@ a.github_a:active {
 }
 /* CONTACT LINK */
 a.contact_a:link {
+	font-weight: normal;
     color: #C0C0C0;
 }
 a.contact_a:visited{
