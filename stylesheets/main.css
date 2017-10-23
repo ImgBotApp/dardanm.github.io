@@ -104,7 +104,8 @@ h1{
 
 #projects{
 	text-align: center;
-	padding: 0px 0 200px 0;
+	padding: 0px 0 0px 0;
+	margin: 0 0 50px;
 	background-image: url(../img/other/doodles.png);
 }
 
