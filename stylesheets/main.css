@@ -20,7 +20,6 @@ body {
 	flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from 
 	letting these items shrink to smaller than their content's 
 	default minimum size. */
-  	padding: 20px;
 }
 
 img{
@@ -114,6 +113,7 @@ h1{
 	flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from 
 	letting these items shrink to smaller than their 
 	content's default minimum size. */
+	padding: 10px 0 10px;
 }
 
 #projects{
@@ -267,5 +267,8 @@ a.contact_a:active {
 
 
 @media screen and (max-width : 352px ){
-
+	.project, #projects{
+		padding: 0;
+		margin: 0;
+	}
 }
