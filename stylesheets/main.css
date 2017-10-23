@@ -1,3 +1,7 @@
+html,body{
+	height: 100%;
+}
+
 html {
 	font-family: 'Roboto', sans-serif; 
 	color: #686868;
@@ -8,8 +12,15 @@ html {
 body {
 	margin: 0;
 	display: flex;
-        min-height: 100vh;
-        flex-direction: column;
+	flex-direction: column;
+	height: 100vh; /* Avoid the IE 10-11 `min-height` bug. */
+}
+
+.content{
+	flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from 
+	letting these items shrink to smaller than their content's 
+	default minimum size. */
+  	padding: 20px;
 }
 
 img{
@@ -101,7 +112,10 @@ h1{
 	padding: 10px 0 10px 0;
 	color: #D2D2D2;
 	font-size: 1em;
-	flex: 1;
+	flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from 
+	letting these items shrink to smaller than their 
+	content's default minimum size. */
+  	padding: 20px;
 }
 
 #projects{
