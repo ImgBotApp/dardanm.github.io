@@ -5,63 +5,125 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
   
 <body>
   
-  <header>
+	<header>
 	  <img class="avatar" src="img/other/image.jpeg"></img>
-    <h1>Dardan's Portfolio</h1>
+   	
+    	<h1>Dardan's Portfolio</h1>
 	    College Student Majoring in CS<br>
 	    contact@dardan.me <br>
-		<a class="resume_a" href="files/ResumeDardan.pdf">Resume</a> - <a class="github_a" href="https://github.com/dardanm">Github</a> <br>
+	    
+		<a class="resume_a" href="files/ResumeDardan.pdf">Resume</a> - 
+		<a class="github_a" href="https://github.com/dardanm">Github</a> <br>
 
-  </header>
+	</header>
   
-    <div class="legend"><h3 class="application">Application</h3>	<h3 class="design">Design</h3></div>
+    <div class="legend">
+    
+    	<button class="type all_cat_btn_big">All</button>
+    	<button class="type application_cat_btn">Application</button>
+    	<button class="type design_cat_btn">Design</button>
+    	
+    	<br>
+    	
+    	<button class="topic all_cat_btn">All</button>
+    	<button class="topic swift_cat_btn">Swift</button>
+    	<button class="topic photoshop_cat_btn">Photoshop</button>
+    	
+    </div>
+    
+	<div id="projects">
+  
+		<div class="project swift_cat application_cat">
+				<h1 class="strip1">Guessor</h1>
+					<p>
+					Game built with Swift 3 & Xcode
+					</p>
+						<a href="https://github.com/dardanm/Guessor">
+							<img src="img/guessor/preview.gif"></img>
+						</a>
+		</div>						
 
-  
-  <div id="projects">
-  
-   
-	<div class="project">
-			<h1 class="strip1">Guessor</h1>
-				<p>Game built with Swift 3 & Xcode</p>
-					<a href="https://github.com/dardanm/Guessor">
-						<img src="img/guessor/preview.gif"></img>
+		<div class="project swift_cat application_cat">	
+		
+			<h1 class="strip1">ThumbList</h1>
+				<p>
+				Note/To-Do application built with Swift 3 & Xcode
+				</p>
+					<a href="http://github.com/dardanm/ThumbList">
+						<img class="preview" src="img/thumblist/preview3.png"></img>
+						<img class="preview" src="img/thumblist/preview2.png"></img>
+						<img class="preview" src="img/thumblist/preview1.png"></img>
 					</a>
-	</div>						
+		</div>
 
-	<div class="project">	
-		<h1 class="strip1">ThumbList</h1>
-			<p>Note/To-Do application built with Swift 3 & Xcode</p>
-				<a href="http://github.com/dardanm/ThumbList">
-					<img class="preview" src="img/thumblist/preview3.png"></img>
-					<img class="preview" src="img/thumblist/preview2.png"></img>
-					<img class="preview" src="img/thumblist/preview1.png"></img>
-				</a>
-	</div>
-
-	<div class="project">
-		<h1 class="strip2">Skyview Template</h1>
-			<p>Template designed with Photoshop CS6</p>
-				<a href="img/web_templates/Skyview.png">
-					<img src="img/web_templates/skyview_preview.png"></img>
-				</a>
-	</div>
+		<div class="project photoshop_cat design_cat">
+		
+			<h1 class="strip2">Skyview Template</h1>
+				<p>
+				Template designed with Photoshop CS6
+				</p>
+					<a href="img/web_templates/Skyview.png">
+						<img src="img/web_templates/skyview_preview.png"></img>
+					</a>
+					
+		</div>
 						
   </div>
    
    <div id="footer">© 2017 Dardan</div>
     
-     <script>    
+	<script>    
 		$(function() {
         $('.lazy').Lazy();
     	});
 	</script>
-
 	 
-	    <script type="text/javascript" src="scripts/jquery.lazy-master/jquery.lazy.min.js"></script>
-	  
+	<script>
+
+		
+		
+		$(document).ready(function(){
+		// APPLICATION/DESIGN
+		$(".all_cat_btn_big").click(function(){
+			$(".swift_cat, .photoshop_cat").show();
+		});			
+			
+		$(".application_cat_btn").click(function(){
+			$(".application_cat").show();
+			$(".design_cat").hide();
+		});
+			
+		$(".design_cat_btn").click(function(){
+			$(".design_cat").show();
+			$(".application_cat").hide();
+		});			
+			
+			
+		// SWIFT/PHOTOSHOP	
+		$(".all_cat_btn").click(function(){
+			$(".swift_cat, .photoshop_cat").show();
+		});	
+		$(".swift_cat_btn").click(function(){
+			$(".swift_cat").show();
+			$(".photoshop_cat").hide();
+		});
+			
+		$(".photoshop_cat_btn").click(function(){
+			$(".swift_cat").hide();
+			$(".photoshop_cat").show();
+		});
+				
+		$("#show").click(function(){
+			$("p").show();
+		});
+
+		});
+	</script>
+ 
 </body>
 </html>

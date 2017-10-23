@@ -31,31 +31,51 @@ h1 {
 	border-top-right-radius: 5px;
 	border-top-left-radius: 5px;
 }
-h3{
+.type{
+	font-weight: bold;
+	border: 0;
 	font-size: 1rem;
 	display: inline-block;
 	border-bottom-style: solid;
 	border-bottom-width: 0px;
 	color: white;
 	padding: 5px 15px 5px 15px;
-	margin: 0xpx;
 	margin: 0;
 	border-top-right-radius: 5px;
 	border-top-left-radius: 5px;
 
 }
-h3.application{
+.type.application_cat_btn{
 	background-color: #58C3FA;
 	border-color: #4DA8D6;
 }
-h3.design{
+.type.design_cat_btn{
 	background-color: #FA5757;
+	border-color: #D94B4B;
+}
+.type.all_cat_btn_big{
+	background: #FAA757;
+}
+
+.topic{
+	border: 0;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 0.9rem;
+	display: inline-block;
+	border-bottom-style: solid;
+	border-bottom-width: 0px;
+	color: white;
+	padding: 3px 10px 3px 10px;
+	margin: 5px 0;
+	border-radius: 5px;
+	background-color: #E0E0E0;
 	border-color: #D94B4B;
 }
 
 header {
 	text-align: center;
-	margin: 50px 0 50px 0;
+	margin: 50px 0 40px 0;
 }
 
 #footer {
@@ -92,6 +112,7 @@ header {
 	border-bottom-style: solid;
 	border-color: #E7E7E7;	
 	border-width: 0px;
+	margin: 0 0 20px;
 }
 
 p{
