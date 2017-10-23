@@ -7,6 +7,9 @@ html {
 
 body {
 	margin: 0;
+	display: flex;
+        min-height: 100vh;
+        flex-direction: column;
 }
 
 img{
@@ -94,12 +97,11 @@ h1{
 
 #footer {
 	background-color: white;
-	width: 100%;
 	text-align: center;
 	padding: 10px 0 10px 0;
 	color: #D2D2D2;
 	font-size: 1em;
-  bottom: 0;
+	flex: 1;
 }
 
 #projects{
