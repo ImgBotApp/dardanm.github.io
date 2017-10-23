@@ -265,19 +265,12 @@ a.contact_a:active {
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width : 352px ){
 	.project{
-		width: 100%;
-		margin: 0px 0 20px 0;
-		border-style: solid;
-		border-width: 3px 0 5px 0;
-		padding: 5px 0;
-		border-radius: 0;
+
 	}
 	#projects, img, {
-		padding: 0;
-		margin: 0;
-		border-radius: 0;
+
     }
 	h1{
 		border-radius: 0;
