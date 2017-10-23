@@ -80,6 +80,15 @@ button {
 header {
 	text-align: center;
 	margin: 50px 0 40px 0;
+	display: block;
+}
+
+h1{
+    color: #5E5E5E;
+    font-size: 2rem;
+	margin: 0;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
 }
 
 #footer {
@@ -89,11 +98,12 @@ header {
 	padding: 10px 0 10px 0;
 	color: #D2D2D2;
 	font-size: 1em;
+  bottom: 0;
 }
 
 #projects{
 	text-align: center;
-	padding: 40px 0 200px 0;
+	padding: 0px 0 200px 0;
 	background-image: url(../img/other/doodles.png);
 }
 
@@ -111,30 +121,50 @@ header {
 }
 
 .legend{
-	padding: 0px 0 0px 0;
 	text-align: center;
 	border-bottom-style: solid;
 	border-color: #E7E7E7;	
 	border-width: 0px;
-	margin: 0 0 20px;
+	background-image: url(../img/other/doodles3.png);
+	height: 199px;
+	margin-bottom: -50px;
 }
 
 p{
 	margin: 0px 0 10px 0;
-	padding: 10px;
+}
+
+p.p_desc{
 	border-bottom-style: dotted;
 	border-bottom-width: 3px;
 	border-color: #E7E7E7;
 	font-style: italic;
+	padding: 10px;
+}
+
+h1.title{
+	font-weight: bold;
+	font-style: italic;
+	font-size: 2rem;
+	display: inline-block;
+	padding: 3px 10px 3px 10px;
+	margin: 5px 0;
+	border-radius: 5px;
+	background-color: #F0F0F0;
+	color: #7A7A7A;
 }
 
 .strip1,.strip2{
+	display: block;
+	margin: 0;
+	font-style: 0;
 	font-weight: bold;
 	padding: 3px 0px 3px 0px;
 	color: white;
 	font-size: 1.2rem;
 	border-bottom-style: solid;
 	border-bottom-width: 5px;
+	
 }
 .strip1{
 	background-color: #58C3FA;
