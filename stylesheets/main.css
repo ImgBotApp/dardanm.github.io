@@ -109,20 +109,21 @@ h1{
 #footer {
 	background-color: white;
 	text-align: center;
-	padding: 10px 0 10px 0;
 	color: #D2D2D2;
 	font-size: 1em;
 	flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from 
 	letting these items shrink to smaller than their 
 	content's default minimum size. */
-  	padding: 20px;
 }
 
 #projects{
 	text-align: center;
-	padding: 0px 0 10px 0;
-	margin: 0 0 50px;
 	background-image: url(../img/other/doodles.png);
+}
+
+.bottom_img{
+	background-image: url(../img/other/doodle_bottom.png);
+	height: 156px;
 }
 
 .project{
@@ -266,29 +267,5 @@ a.contact_a:active {
 
 
 @media screen and (max-width : 352px ){
-	.project{
 
-	}
-	#projects, img, {
-
-    }
-	h1{
-		border-radius: 0;
-	}
-	img{
-		max-width: 400px;
-	}
 }
-
-/*
-@media screen and (max-width: 1800px) {
-
-	#projects{
-	text-align: left;
-	}
-	.project{
-		text-align: center;
-	}
-	
-}
-*/
