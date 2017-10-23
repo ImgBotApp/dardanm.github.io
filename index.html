@@ -33,6 +33,7 @@
     	<button class="topic all_cat_btn">All</button>
     	<button class="topic swift_cat_btn">Swift</button>
     	<button class="topic photoshop_cat_btn">Photoshop</button>
+    	<button class="topic java_cat_btn">Java</button>
     	
     </div>
     
@@ -84,11 +85,9 @@
 	</script>
 	 
 	<script>
-
-		
-		
 		$(document).ready(function(){
-		// APPLICATION/DESIGN
+			
+		// CATEGORIES
 		$(".all_cat_btn_big").click(function(){
 			$(".swift_cat, .photoshop_cat").show();
 		});			
@@ -104,18 +103,26 @@
 		});			
 			
 			
-		// SWIFT/PHOTOSHOP	
+		// MINI-CATEGORIES	
+			
+		// All
 		$(".all_cat_btn").click(function(){
 			$(".swift_cat, .photoshop_cat").show();
 		});	
+		// Swift
 		$(".swift_cat_btn").click(function(){
 			$(".swift_cat").show();
-			$(".photoshop_cat").hide();
+			$(".photoshop_cat, .java_cat").hide();
 		});
-			
+		// Java
+//		$(".java_cat_btn").click(function(){
+//			$(".java_cat").show();
+//			$(".photoshop_cat, .swift_cat").hide();
+//		});			
+		//Photoshop
 		$(".photoshop_cat_btn").click(function(){
 			$(".swift_cat").hide();
-			$(".photoshop_cat").show();
+			$(".photoshop_cat, .java_cat").show();
 		});
 				
 		$("#show").click(function(){
