@@ -10,72 +10,86 @@ body {
 }
 
 img{
-	max-width: 320px;
-	width: 100%;
     height: auto;
 	display:inline-block;
     margin: auto;
 	padding: 0 10px 0 10px;
+	height: 600px;
+}
+img.avatar{
+	margin: 10px 0 10px 0;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
 }
 
-img.web_template{
-	width: 100%;
-	max-width: 2000px;
-	padding: 0;
-}
-
-img.preview{
-	margin-top: 20px;
-}
 
 h1 {
     font-weight: bold;
     color: #5E5E5E;
     font-size: 2rem;
-	margin: 20px 0 20px 0;
+	margin: 0;
 }
-
-h2 {
-
+h3{
+	font-size: 1rem;
+	display: inline-block;
+	border-bottom-style: solid;
+	border-bottom-width: 5px;
+	color: white;
+	padding: 5px 15px 5px 15px;
+	margin: 20px 40px 0px 10xpx;
+}
+h3.application{
+	background-color: #58C3FA;
+	border-color: #4DA8D6;
+}
+h3.design{
+	background-color: #FA5757;
+	border-color: #D94B4B;
 }
 
 header {
 	text-align: center;
-    padding: 30px 50px 0px 50px;
+	margin: 50px 0 50px 0;
 }
 
 #projects{
-	height: 30px;
-	margin-top: 30px;
 	text-align: center;
+	padding: 40px 0 200px 0;
+	background-image: url(../img/other/doodles.png);
+
+
+
 }
 
-.project_box{
-	margin: 50px 0 50px 0;
-	text-align: center;
-}
-
-p.project_desc{
-	text-align: center;
-	padding: 20px 0px 20px;
-	margin: 20px;
+.project{
+	padding: 5px 5px 10px 5px;
+	margin: 10px;
 	display: inline-block;
+	border-style: solid;
+	border-color: #E7E7E7;	
+	border-width: 3px 3px 8px 3px;
+	border-bottom-color: #DCDCDC;
+	background-color: white;
+	box-shadow: 0px 2px 4px 0px #BCBCBC;
 }
 
-p.intro_p{
-
+p{
+	margin: 0px 0 10px 0;
+	padding: 10px;
+	border-bottom-style: dotted;
+	border-bottom-width: 3px;
+	border-color: #E7E7E7;
+	font-style: italic;
 }
-
-
 
 .strip1,.strip2{
 	font-weight: bold;
-	padding: 5px 0px 5px 0px;
-	text-align: center;
+	padding: 3px 0px 3px 0px;
 	color: white;
 	font-size: 1.2rem;
 	border-bottom-style: solid;
-	border-width: 5px;
+	border-bottom-width: 5px;
 }
 .strip1{
 	background-color: #58C3FA;
@@ -159,15 +173,33 @@ a.contact_a:active {
 
 @media screen and (max-width: 700px) {
 	h1{
-		margin: 10px 0 0px 0;
+		
 	}
-	#projects{
-		margin-top: 0px;
-    }
-	p.intro_p{
-		padding: 0px
+	.project{
+		width: 100%;
+		margin: 0px 0 20px 0;
+		border-style: solid;
+		border-width: 3px 0 5px 0;
+		padding: 5px 0;
 	}
-	p.project_desc{
+	#projects, img, {
+		padding: 0;
 		margin: 0;
+    }
+	img.preview{
+
 	}
 }
+
+/*
+@media screen and (max-width: 1800px) {
+
+	#projects{
+	text-align: left;
+	}
+	.project{
+		text-align: center;
+	}
+	
+}
+*/
