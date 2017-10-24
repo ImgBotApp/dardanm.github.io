@@ -176,7 +176,9 @@ img.avatar{
 }
 .bottom_img{
 	background-image: url(../img/other/doodle_bottom.png);
-	height: 156px;
+	margin-bottom: 10px;
+	height: 156px; 
+	
 }
 
 #footer {
