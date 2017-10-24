@@ -65,20 +65,22 @@ header {
 	color: white;
 	padding: 5px 15px 5px 15px;
 	margin: 0;
-	border-top-right-radius: 5px;
 	border-top-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 
 }
-.type.app_cat_btn{
-	background-color: #58C3FA;
-	border-color: #4DA8D6;
-}
-.type.design_cat_btn{
-	background-color: #FA5757;
-	border-color: #D94B4B;
-}
+
 .type.all_cat_btn_big{
-	background: #FAA757;
+	background: #8BA9B9;
+}
+.type.app_cat_btn_big{
+	background-color: #58C3FA;
+}
+.type.website_cat_btn_big{
+	background: #57D2FA;
+}
+.type.design_cat_btn_big{
+	background-color: #FA5757;
 }
 
 .topic{
