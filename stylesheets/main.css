@@ -22,34 +22,40 @@ body {
 	default minimum size. */
 }
 
-img{
-    height: auto;
-	display:inline-block;
-    margin: auto;
-	padding: 0 10px 0 10px;
-	height: 600px;
-	width: 320px;
-}
-img.avatar{
-	margin: 10px 0 10px 0;
-	height: 100px;
-	width: 100px;
-	border-radius: 50%;
+header {
+	text-align: center;
+	margin: 50px 0 40px 0;
+	display: block;
 }
 
+.legend{
+	text-align: center;
+	border-bottom-style: solid;
+	border-color: #E7E7E7;	
+	border-width: 0px;
+	background-image: url(../img/other/doodles3.png);
+	height: 199px;
+	margin-bottom: -50px;
+}
 
-h1 {
-    color: #5E5E5E;
-    font-size: 2rem;
-	margin: 0;
-	border-top-right-radius: 5px;
-	border-top-left-radius: 5px;
+#projects{
+	text-align: center;
+	background-image: url(../img/other/doodles.png);
 }
-button {
-	outline: none;
-	border: none;
-	box-shadow:none;
+
+.project{
+	padding: 5px 5px 10px 5px;
+	margin: 10px;
+	display: inline-block;
+	border-style: solid;
+	border-color: #E7E7E7;	
+	border-width: 2px 2px 5px 2px;
+	border-bottom-color: #DCDCDC;
+	background-color: white;
+	box-shadow: 0px 2px 4px 0px #BCBCBC;
+	border-radius: 8px;
 }
+
 .type{
 	font-weight: bold;
 	font-size: 1rem;
@@ -63,7 +69,7 @@ button {
 	border-top-left-radius: 5px;
 
 }
-.type.application_cat_btn{
+.type.app_cat_btn{
 	background-color: #58C3FA;
 	border-color: #4DA8D6;
 }
@@ -91,11 +97,6 @@ button {
 	border-color: #D94B4B;
 }
 
-header {
-	text-align: center;
-	margin: 50px 0 40px 0;
-	display: block;
-}
 
 h1{
     color: #5E5E5E;
@@ -103,62 +104,6 @@ h1{
 	margin: 0;
 	border-top-right-radius: 5px;
 	border-top-left-radius: 5px;
-}
-
-#footer {
-	background-color: white;
-	text-align: center;
-	color: #D2D2D2;
-	font-size: 1em;
-	flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from 
-	letting these items shrink to smaller than their 
-	content's default minimum size. */
-	padding: 10px 0 10px;
-}
-
-#projects{
-	text-align: center;
-	background-image: url(../img/other/doodles.png);
-}
-
-.bottom_img{
-	background-image: url(../img/other/doodle_bottom.png);
-	height: 156px;
-}
-
-.project{
-	padding: 5px 5px 10px 5px;
-	margin: 10px;
-	display: inline-block;
-	border-style: solid;
-	border-color: #E7E7E7;	
-	border-width: 2px 2px 5px 2px;
-	border-bottom-color: #DCDCDC;
-	background-color: white;
-	box-shadow: 0px 2px 4px 0px #BCBCBC;
-	border-radius: 8px;
-}
-
-.legend{
-	text-align: center;
-	border-bottom-style: solid;
-	border-color: #E7E7E7;	
-	border-width: 0px;
-	background-image: url(../img/other/doodles3.png);
-	height: 199px;
-	margin-bottom: -50px;
-}
-
-p{
-	margin: 0px 0 10px 0;
-}
-
-p.p_desc{
-	border-bottom-style: dotted;
-	border-bottom-width: 3px;
-	border-color: #E7E7E7;
-	font-style: italic;
-	padding: 10px;
 }
 
 h1.title{
@@ -195,7 +140,53 @@ h1.title{
 	border-color: #D94B4B;
 	text-shadow: 0px 0.14rem #D02C2D;
 }
+p{
+	margin: 0px 0 10px 0;
+}
 
+p.p_desc{
+	border-bottom-style: dotted;
+	border-bottom-width: 3px;
+	border-color: #E7E7E7;
+	font-style: italic;
+	padding: 10px;
+}
+
+button {
+	outline: none;
+	border: none;
+	box-shadow:none;
+}
+
+img{
+    height: auto;
+	display:inline-block;
+    margin: auto;
+	padding: 0 10px 0 10px;
+	height: 600px;
+	width: 320px;
+}
+img.avatar{
+	margin: 10px 0 10px 0;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+}
+.bottom_img{
+	background-image: url(../img/other/doodle_bottom.png);
+	height: 156px;
+}
+
+#footer {
+	background-color: white;
+	text-align: center;
+	color: #D2D2D2;
+	font-size: 1em;
+	flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from 
+	letting these items shrink to smaller than their 
+	content's default minimum size. */
+	padding: 10px 0 10px;
+}
 
 /* unvisited link */
 a:link {

@@ -29,8 +29,9 @@
     <div class="legend">
     
     	<button class="type all_cat_btn_big">All</button>
-    	<button class="type application_cat_btn">Application</button>
-    	<button class="type design_cat_btn">Design</button>
+    	<button class="type app_cat_btn_big">Application</button>
+    	<button class="type website_cat_btn_big">Website</button>
+    	<button class="type design_cat_btn_big">Design</button>
     	
     	<br>
     	
@@ -42,7 +43,7 @@
     
 	<div id="projects">
   
-		<div class="project swift_cat application_cat">
+		<div class="project swift_cat app_cat">
 				<h1 class="strip1">Guessor</h1>
 					<p class="p_desc">
 					Game built with Swift 3 & Xcode
@@ -67,7 +68,7 @@
 	<!-- end projects -->								
   	</div>
 	   
-	<div class="bottom_img">
+	<div class="bottom_img"></div>
 		   
 	<!-- end content -->
 	</div>
@@ -88,14 +89,14 @@
 			$(".swift_cat, .photoshop_cat").show();
 		});			
 			
-		$(".application_cat_btn").click(function(){
-			$(".application_cat").show();
+		$(".app_cat_btn").click(function(){
+			$(".app_cat").show();
 			$(".design_cat").hide();
 		});
 			
 		$(".design_cat_btn").click(function(){
 			$(".design_cat").show();
-			$(".application_cat").hide();
+			$(".app_cat").hide();
 		});			
 			
 			
