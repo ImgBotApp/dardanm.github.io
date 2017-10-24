@@ -190,6 +190,7 @@ img.avatar{
 	letting these items shrink to smaller than their 
 	content's default minimum size. */
 	padding: 10px 0 10px;
+	margin-top: 10px;
 }
 
 /* unvisited link */
