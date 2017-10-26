@@ -176,7 +176,6 @@ img.avatar{
 }
 .bottom_img{
 	background-image: url(../img/other/doodle_bottom.png);
-	margin-bottom: 10px;
 	height: 156px; 
 	
 }
@@ -190,7 +189,6 @@ img.avatar{
 	letting these items shrink to smaller than their 
 	content's default minimum size. */
 	padding: 10px 0 10px;
-	margin-top: 10px;
 }
 
 /* unvisited link */
